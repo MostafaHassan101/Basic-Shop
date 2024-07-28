@@ -1,0 +1,24 @@
+<div class="products-container">
+    <h2>Products</h2>
+    <div class="search-bar">
+        <input type="text" placeholder="search" [(ngModel)]="searchText" (keyup)="Search()">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product name</th>
+                <th>Price</th>
+                <th>Add</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                    <img class="add-to-cart" src="assets/icons/cart-plus-solid.svg" alt="add to cart" (click)="AddToCart(product.id!)"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

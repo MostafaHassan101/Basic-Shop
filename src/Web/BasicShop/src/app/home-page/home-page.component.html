@@ -1,0 +1,10 @@
+<div *ngIf="headerVisible" class="welcome-container">
+    <nav class="fs-4">
+        <a class="router-link" routerLink="/home">Home</a>
+        <span>|</span>
+        <a class="router-link" routerLink="/shop-n-cart">Shop and cart</a>
+        <span>|</span>
+        <a class="router-link" routerLink="/product">Admin</a>
+    </nav>
+    <h2 *ngIf="isVisible" class="pt-2">Welcome to Basic Shop</h2>
+</div>

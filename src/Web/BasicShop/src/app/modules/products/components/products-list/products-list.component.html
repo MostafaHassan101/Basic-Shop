@@ -1,0 +1,39 @@
+  <div class="product-list">
+      <div class="products-container">
+          <input type="text" placeholder="Filter" (keypress)="onEnterKeyPress($event)" [(ngModel)]="filterText" />
+          <button (click)="applyFilter()">Filter</button>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Product name</th>
+                      <th>Price</th>
+                      <th>quantity</th>
+                      <th>Visible</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let product of products">
+                      <td>{{ product.name }}</td>
+                      <td><input class="overflow-ellipsis" (change)="updateProduct(product)" style="width: 80px;"
+                              type="text" [(ngModel)]="product.price" /></td>
+                      <td><input style="width: 80px;" type="number" (change)="updateProduct(product)"
+                              [(ngModel)]="product.quantity" /></td>
+                      <td>
+                          <label class="switch">
+                              <input type="checkbox" (change)="updateProduct(product)"
+                                  [(ngModel)]="product.isVisible" />
+                              <span class="slider round"></span>
+                          </label>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><input type="text" [(ngModel)]="newProduct.name" /></td>
+                      <td><input style="width: 80px;" type="text" maxlength="5" [(ngModel)]="newProduct.price" /></td>
+                      <td><input style="width: 80px;" type="number" [(ngModel)]="newProduct.quantity" /></td>
+
+                      <td><button (click)="addProduct()">Add</button></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
