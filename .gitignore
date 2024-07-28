@@ -243,3 +243,4 @@ _Pvt_Extensions
 /.mfractor
 src/WebUI/ClientApp/package-lock.json
 /src/Web/HME-UI/dist/hme
+/src/Web/BasicShop/dist/BasicShopUI

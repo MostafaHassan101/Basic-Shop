@@ -32,7 +32,7 @@ export class CartComponent implements OnInit {
   updateItemInCart(itemId: string, qty: number) {
     this.cartService.updateCartItem(itemId, qty).subscribe({
       next: (value) => {
-        ///
+        this.getCartItems();
       },
     })
   }
