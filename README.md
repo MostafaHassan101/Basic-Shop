@@ -21,6 +21,11 @@ The task involves building a Basic Shop web application with the following pages
 - **Single Page Application (SPA)**: The frontend is developed as a Single Page Application (SPA) using Angular v16.
 - **Angular**: Angular is used for building the dynamic and responsive user interface.
 
+## URLs
+
+- **Website**: [http://bshopui.runasp.net](http://bshopui.runasp.net)
+- **Web API**: [http://bshop.runasp.net/swagger/index.html](http://bshop.runasp.net/swagger/index.html)
+
 ## Getting Started
 
 To get started with the project, follow these steps:
@@ -29,7 +34,7 @@ To get started with the project, follow these steps:
 2. **Backend Setup**:
    - Navigate to the backend project directory.
    - Install the required dependencies using `dotnet restore`.
-   - Run the database migrations to set up the database schema or may restore database backup in folder `Database Backups`
+   - Run the database migrations to set up the database schema or restore the database backup in the `Database Backups` folder.
    - Start the backend server using `dotnet run`.
 3. **Frontend Setup**:
    - Navigate to the frontend project directory.
